@@ -253,7 +253,7 @@ impl SvgBuilder {
         out
     }
 
-    fn path(&self, qr: &QRCode) -> String {
+    pub fn path(&self, qr: &QRCode) -> String {
         const DEFAULT_COMMAND: [ModuleFunction; 1] = [Shape::square];
         const DEFAULT_COMMAND_COLOR: [Option<Color>; 1] = [None];
 
